@@ -1,0 +1,12 @@
+<!-- src/app/hotel-list/hotel-list.component.html -->
+<h2>Available Hotels</h2>
+<ul>
+  <li *ngFor="let hotel of hotels">
+    <strong>{{ hotel.name }}</strong> - {{ hotel.location }} - ${{ hotel.price }} per night
+    <button (click)="bookHotel(hotel.name)">Book</button>
+  </li>
+</ul>
+
+<div *ngIf="bookedHotel">
+  <h3>Thank you for booking {{ bookedHotel }}!</h3>
+</div>
