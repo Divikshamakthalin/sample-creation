@@ -1,0 +1,6 @@
+npm install -g @angular/cli
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"]
+ng new my-app
+cd my-app
+ng serve
